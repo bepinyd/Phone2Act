@@ -43,7 +43,7 @@ This starts a WebSocket server at `ws://<your-computer-ip>:9090`
 
 ## 📱 App Installation
 
-1. Download the latest APK from [Releases](https://drive.google.com/file/d/1yDXaTvdu8CEoIoj39ggsrJ-cXL1p5EVV/view?usp=sharing)
+1. Download the latest APK from [Releases](https://drive.google.com/file/d/1S9ZqiGX0P-M0WQfuxcRqmlSLUU7_yy8Q/view?usp=sharing)
 2. Transfer to your Android device
 3. Allow installation from unknown sources and install
 
