@@ -151,7 +151,7 @@ class _HomePageState extends State<HomePage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BROS2'),
+        title: const Text('Phone2Act'),
         actions: [
           IconButton(onPressed: _connect, icon: const Icon(Icons.usb)),
           PopupMenuButton<String>(

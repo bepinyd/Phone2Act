@@ -42,7 +42,7 @@ class _PublisherPageState extends State<PublisherPage> with SingleTickerProvider
   void _publishOnce() {
     final rawTopic = _topicController.text.trim();
     if (rawTopic.isEmpty) return;
-    final topic = rawTopic.startsWith('/bros2/') ? rawTopic : '/bros2/$rawTopic';
+    final topic = rawTopic.startsWith('/Phone2Act/') ? rawTopic : '/Phone2Act/$rawTopic';
 
     if (widget.isJoystick && _tabController.index == 0) {
       final twist = {

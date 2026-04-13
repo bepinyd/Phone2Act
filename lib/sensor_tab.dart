@@ -33,7 +33,7 @@ class _SensorTabState extends State<SensorTab> {
       setState(() => _accelPublishing = true);
       _accelSub = accelerometerEvents.listen((event) {
         widget.rosManager.publishVector3Stamped(
-          '/bros2/accelerometer',
+          '/Phone2Act/accelerometer',
           {
             "header": {"stamp": {"sec": 0, "nanosec": 0}, "frame_id": "imu"},
             "vector": {"x": event.x, "y": event.y, "z": event.z},
@@ -52,7 +52,7 @@ class _SensorTabState extends State<SensorTab> {
       setState(() => _gyroPublishing = true);
       _gyroSub = gyroscopeEvents.listen((event) {
         widget.rosManager.publishVector3Stamped(
-          '/bros2/gyroscope',
+          '/Phone2Act/gyroscope',
           {
             "header": {"stamp": {"sec": 0, "nanosec": 0}, "frame_id": "imu"},
             "vector": {"x": event.x, "y": event.y, "z": event.z},
@@ -71,7 +71,7 @@ class _SensorTabState extends State<SensorTab> {
       setState(() => _magPublishing = true);
       _magSub = magnetometerEvents.listen((event) {
         widget.rosManager.publishVector3Stamped(
-          '/bros2/magnetometer',
+          '/Phone2Act/magnetometer',
           {
             "header": {"stamp": {"sec": 0, "nanosec": 0}, "frame_id": "imu"},
             "vector": {"x": event.x, "y": event.y, "z": event.z},
@@ -113,7 +113,7 @@ class _SensorTabState extends State<SensorTab> {
       ),
     ).listen((Position position) {
       widget.rosManager.publishNavSatFix(
-        '/bros2/gps',
+        '/Phone2Act/gps',
         {
           "header": {"stamp": {"sec": 0, "nanosec": 0}, "frame_id": "gps"},
           "status": {"status": 0, "service": 1},

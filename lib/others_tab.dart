@@ -68,7 +68,7 @@ class _OthersTabState extends State<OthersTab> with WidgetsBindingObserver {
 
       // 3. Publish using the custom topic name from the controller
       final String topicSuffix = _arTopicController.text.trim();
-      final String fullTopic = topicSuffix.startsWith('/') ? topicSuffix : '/bros2/$topicSuffix';
+      final String fullTopic = topicSuffix.startsWith('/') ? topicSuffix : '/Phone2Act/$topicSuffix';
 
       widget.rosManager.publishPoseStamped(fullTopic, {
         "header": {
@@ -118,7 +118,7 @@ class _OthersTabState extends State<OthersTab> with WidgetsBindingObserver {
 
     // 3. Publish to ROS2
     final String volSuffix = _volTopicController.text.trim();
-    final String fullVolTopic = volSuffix.startsWith('/') ? volSuffix : '/bros2/$volSuffix';
+    final String fullVolTopic = volSuffix.startsWith('/') ? volSuffix : '/Phone2Act/$volSuffix';
     widget.rosManager.publishInt32MultiArray(fullVolTopic, [_upToggle, _downToggle]);
   });
 }
@@ -158,7 +158,7 @@ class _OthersTabState extends State<OthersTab> with WidgetsBindingObserver {
                 decoration: const InputDecoration(
                   labelText: 'AR Pose Topic',
                   hintText: 'e.g. ar_pose',
-                  prefixText: '/bros2/',
+                  prefixText: '/Phone2Act/',
                   border: OutlineInputBorder(),
                 )
               ),
@@ -168,7 +168,7 @@ class _OthersTabState extends State<OthersTab> with WidgetsBindingObserver {
                 decoration: const InputDecoration(
                   labelText: 'Volume Topic',
                   hintText: 'e.g. volume',
-                  prefixText: '/bros2/',
+                  prefixText: '/Phone2Act/',
                   border: OutlineInputBorder(),
                 )
               ),
