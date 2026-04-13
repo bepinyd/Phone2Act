@@ -60,7 +60,7 @@ flutter_icons:
   ios: true
   image_path: "assets/bros2.jpeg"
   adaptive_icon_background: "#FFFFFF" # background color for circular icon
-  adaptive_icon_foreground: "assets/bros2.jpeg"
+  adaptive_icon_foreground: "assets/Phone2Act.png"
 
 
 # The following section is specific to Flutter packages.
